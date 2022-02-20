@@ -8,4 +8,4 @@
 
 ## 읽는 중
 
-📒  [Clean Code](summaries/clean-code)
+📒  [Clean Code](clean-code)
