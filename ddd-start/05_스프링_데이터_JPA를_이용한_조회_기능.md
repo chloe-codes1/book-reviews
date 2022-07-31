@@ -17,7 +17,7 @@
       public interface Specification<T> {
         public boolean isSatisfiedBy(T agg);
       }
-        ```
+      ```
 
     - `isSatisfiedBy()` method의 agg 파라미터는 `검사 대상` 이 되는 객체다
     - 스펙을 `리포지터리` 에 사용하면 agg는 `애그리거트 루트`가 되고,
