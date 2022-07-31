@@ -12,11 +12,11 @@
   - 검색 조건을 다양항게 조합해야 할 때 사용할 수 있는 것
   - 애그리거트가 특정 조건을 충족하는지를 검사할 때 사용하는 인터페이스
   - ex)
-
-        ```java
-        public interface Specification<T> {
-          public boolean isSatisfiedBy(T agg);
-        }
+  
+      ```java
+      public interface Specification<T> {
+        public boolean isSatisfiedBy(T agg);
+      }
         ```
 
     - `isSatisfiedBy()` method의 agg 파라미터는 `검사 대상` 이 되는 객체다
@@ -64,12 +64,12 @@
 - `Pageable` 타입은 `인터페이스`로, 실제 Pageable 타입 객체는 `PageRequest` class를 이용해서 생성한다
   - ex)
 
-        ```java
-        import org.springframework.data.domain.PageRequest
-        
-        PageRequest pageReq = PageRequest.of(1, 10);
-        List<MemberData> user = memberDataDao.findByNameLike("chloe%", pageReq);
-        ```
+      ```java
+      import org.springframework.data.domain.PageRequest
+      
+      PageRequest pageReq = PageRequest.of(1, 10);
+      List<MemberData> user = memberDataDao.findByNameLike("chloe%", pageReq);
+      ```
 
     - `PageRequest.of()` method의 첫 번째 인자는 `페이지 번호`를, 두 번째 인자는 `한 페이지의 개수` 를 의미한다
     - 페이지 번호는 0번부터 시작하므로, 위 코드는 한 페이지에 10개씩 표시한다고 했을 때 두번째 페이지를 조회한다.
@@ -77,11 +77,11 @@
 - `PageRequest` 와 `Sort` 를 사용하면 정렬 순서를 지정할 수 있다
   - ex)
 
-        ```java
-        Sort sort = Sort.by("name").descending();
-        PageRequest pageReq = PageRequest.of(1, 2, sort);
-        List<MemberData> user = memberDataDao.findByNameLike("chloe%", pageReq);
-        ```
+      ```java
+      Sort sort = Sort.by("name").descending();
+      PageRequest pageReq = PageRequest.of(1, 2, sort);
+      List<MemberData> user = memberDataDao.findByNameLike("chloe%", pageReq);
+      ```
 
 - `Pageable` 을 사용하는 method의 return type이 `Page` 일 경우, 스프링 데이터 JPA는 목록 조회 쿼리와 함께 `COUNT` 쿼리도 실행해서 조건에 해당하는 데이터 개수를 구한다
 - `Page` 는 전체 개수, 페이지 개수 등 페이징 처리에 필요한 데이터도 함께 제공한다
