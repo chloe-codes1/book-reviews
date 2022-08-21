@@ -12,3 +12,4 @@
 ## 읽는 중
 
 📒  [Clean Code](clean-code)
+📒  [도메인 주도 설계 핵심](ddd-distilled)
