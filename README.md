@@ -14,3 +14,5 @@
 📒  [Clean Code](clean-code)
 
 📒  [도메인 주도 설계 핵심](ddd-distilled)
+
+📒  [데이터 중심 애플리케이션 설계](designing-data-intensive-applications)
