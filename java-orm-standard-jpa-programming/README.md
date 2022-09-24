@@ -3,3 +3,4 @@
 <br>
 
 - [Chapter 1: JPA 소개](01_JPA_소개.md)
+- [Chapter 2: JPA 시작](02_JPA_시작.md)
