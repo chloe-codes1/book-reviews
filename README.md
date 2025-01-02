@@ -22,3 +22,5 @@
 📒  [자바 ORM 표준 JPA 프로그래밍](java-orm-standard-jpa-programming)
 
 📒  [Effective Java](effective-java)
+
+📒  [읽고 나면 쉬워지는 자료구조](data-structures-the-fun-way)
